@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- bootstrap 4.6 -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!--Font Awesome-->
+        <link rel="shortcut icon" href="~/favicon.ico">
+
+      
+        <title>Music App</title>
+    </head>
+
+    <body>
+        <!-- <i class="fas fa-backward-step"></i> -->
+       
+        <section class="TheApp">
+            <div class="content">
+                <div class="topPart">
+                    <span class="material-icons">
+                        expand_more
+                    </span>
+                    <span class="text">Now Playing</span>
+                    <span class="material-icons">
+                        more_horiz
+                    </span>               
+                 </div>
+                <div class="imageArea">
+                    <img src="" alt="">
+                </div>
+                <div class="songDetails my-5">
+                    <h4 class="name text-center text-secondary">First Song</h4>
+                    <h4 class="artist text-center" style="color:rgb(183, 182, 182)">Hamo Bika</h4>
+                        <div class="progressArea mt-3 mb-2">
+                            <div class="progressBar">
+                                <audio src="" id="mainAudio"></audio>
+                            </div>
+                        </div>
+                        <div class="timeSong w-100 d-flex justify-content-between align-items-center">
+                            <span class="currentTime">00:00</span>
+                            <span class="maxDuration">00:00</span>
+
+                        </div>
+
+                </div>
+                <div class="controlsPart mb-3 d-flex justify-content-between align-items-center">
+                    <div class="playList">
+                        <span class="material-icons" id="repeatPlayList" title="PlayList Loop">
+                            repeat
+                            </span>
+                    </div>
+                
+                    <div class="info w-50 d-flex justify-content-between align-items-center" >
+                        <span class="material-icons" id="prevSong">
+                            skip_previous
+                        </span>                       
+                      <div class="playBtn">
+                        <span class="material-icons" id="playPause">
+                            play_arrow
+                        </span>
+                      </div>
+                        <span class="material-icons" id="nextSong">
+                            skip_next
+                        </span>  
+                    </div>
+                    <span class="material-icons" id="loopMusic">
+                        queue_music
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- <script src="js/all.min.js"></script> -->
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/musicList.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
